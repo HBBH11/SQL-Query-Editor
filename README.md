@@ -1,5 +1,8 @@
 # SQL-Query-Editor
 
+![image](https://github.com/user-attachments/assets/7471d5cb-28d6-4d70-8b2a-dce775b4603c)
+
+
 # Core Technologies & Dependencies:
 
 Streamlit: Used for creating the web interface
