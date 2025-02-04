@@ -244,4 +244,4 @@ Can submit final answer
 Views results and explanations
 
 # PS:
-Don't forget to change your "url & key" generated from Supabase and implement your own questions.
+Don't forget to change "url & key" generated from Supabase and implement your own database.
