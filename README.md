@@ -107,10 +107,6 @@ Remember to update the Supabase credentials (`url` & `key`) and implement your o
 
 
 
-## 🔄 Application Flow
-
-![SQL Editor Workflow](path-to-your-workflow-svg)
-
 ## 📊 Performance Metrics
 
 - ⚡ Query execution time < 2s
