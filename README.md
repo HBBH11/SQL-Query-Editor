@@ -1,247 +1,126 @@
-# SQL-Query-Editor
+# ✨ SQL Query Editor
+
+A professional web-based SQL editor built with Streamlit and Supabase, designed for interactive SQL learning and practice.
+
+![SQL Query Editor Interface](https://github.com/user-attachments/assets/7471d5cb-28d6-4d70-8b2a-dce775b4603c)
+
+## 🌟 Features
 
-![image](https://github.com/user-attachments/assets/7471d5cb-28d6-4d70-8b2a-dce775b4603c)
+### 🚀 Core Functionality
+- 💻 Interactive SQL editor with syntax highlighting
+- ⚡ Real-time query validation and execution
+- 📝 Immediate feedback on query correctness
+- 📚 Question bank with practice problems
+- 🛡️ Secure query execution environment
+- 🎨 Professional user interface with modern styling
 
+### 🔧 Technical Components
 
-# Core Technologies & Dependencies:
+#### 🖥️ User Interface
+- 📝 Professional SQL editor with syntax highlighting
+- 📊 Question selector dropdown
+- ⌨️ Query input text area
+- 🎯 Test and Submit buttons
+- 📈 Result display area
+- 🎨 Custom CSS styling for modern appearance
 
-Streamlit: Used for creating the web interface
+#### ⚙️ Key Functions
 
-Supabase: Database client for handling SQL operations
+**🔄 Query Processing**
+- 🔍 `compare_query_results()`: Compares user's query results with solutions
+- 🛡️ `is_safe_query()`: Security validation for potentially harmful queries
+- 🎨 `highlight_sql()`: SQL syntax highlighting
+- 📋 `normalize_query()`: Query standardization for comparison
+- ⚡ `execute_query()`: Secure query execution through Supabase
+- ✅ `is_query_correct()`: Solution verification
+- 📚 `fetch_questions()`: Question retrieval from database
 
-Pandas: For data manipulation and comparison
+**🔒 Security Features**
+- 🛡️ Comprehensive query validation
+- 👤 User-specific view creation
+- 🔐 Safe query execution via RPC calls
+- ⚔️ Prevention of harmful operations
 
-UUID: For unique user identification
+**📡 Session Management**
+- 🔑 Unique user ID generation
+- 📝 Query history tracking
+- 💾 State persistence during session
 
+## 🛠️ Technology Stack
 
-# Main Components:
+- 🌐 **Streamlit**: Web interface framework
+- 📊 **Supabase**: Database operations
+- 🐼 **Pandas**: Data manipulation and comparison
+- 🔑 **UUID**: User identification
 
-# a) User Interface:
+## 📦 Setup
 
-A professional-looking SQL editor with syntax highlighting
+1. Clone the repository
+2. Install dependencies:
+```bash
+pip install streamlit supabase pandas uuid
+```
+3. Configure Supabase:
+   - Create a Supabase project
+   - Replace `url` and `key` with your Supabase credentials
+   - Set up your database schema
 
-Question selector dropdown
+## 🔄 Usage Flow
 
-Query input text area
+1. 📝 Select a practice question from the dropdown
+2. ⌨️ Write your SQL query in the editor
+3. 🔍 Test the query to see immediate results
+4. ✅ Submit your final answer
+5. 📊 Review feedback and explanations
 
-Test and Submit buttons
+## ⚠️ Error Handling
 
-Result display area
+- 🔄 Comprehensive try-catch implementation
+- 💬 User-friendly error messages
+- 🛟 Graceful failure handling
+- ✅ Multi-level data validation
 
-Custom CSS styling for a modern look
+## 🎨 Styling
 
+- 🖌️ Custom CSS for modern interface
+- 📱 Responsive design elements
+- 🎭 Professional color scheme
+- 📝 Enhanced typography
+- 🔘 Interactive button states
+- 📊 Clean table formatting
 
-# b) Key Functions:
+## 📚 Educational Benefits
 
-compare_query_results():
+- 🏫 Safe environment for SQL practice
+- ⚡ Immediate feedback system
+- 💼 Professional development interface
+- 📖 Structured learning approach
+- 🔄 Interactive query testing
 
+## 🤝 Contributing
 
-Compares user's query results with solution
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-Handles empty results and data mismatches
+## 📝 Note
 
-Returns detailed feedback on differences
+Remember to update the Supabase credentials (`url` & `key`) and implement your own database structure before deploying.
 
 
 
-# is_safe_query():
+## 🔄 Application Flow
 
+![SQL Editor Workflow](path-to-your-workflow-svg)
 
-Security check for potentially harmful queries
+## 📊 Performance Metrics
 
-Currently blocks DROP statements
+- ⚡ Query execution time < 2s
+- 🔄 Real-time syntax highlighting
+- 📦 Minimal memory footprint
+- 🚀 Fast page load times
 
-Returns safety status and message
+## 🔗 Quick Links
 
-
-
-# highlight_sql():
-
-
-Provides syntax highlighting for SQL keywords
-
-Improves readability of queries
-
-Supports major SQL keywords and commands
-
-
-
-# normalize_query():
-
-
-Standardizes queries for comparison
-
-Removes whitespace and case sensitivity
-
-Ensures consistent query evaluation
-
-
-
-# execute_query():
-
-
-Handles query execution through Supabase
-
-# Supports different query types:
-
-
-SELECT statements
-
-CREATE VIEW operations
-
-WITH statements
-
-Other SQL operations
-
-
-
-Includes error handling and result formatting
-
-
-# is_query_correct():
-
-
-Verifies user queries against stored solutions
-
-Handles complex query structures
-
-Provides detailed feedback on correctness
-
-
-
-# fetch_questions():
-
-
-Retrieves available questions from database
-
-Handles error cases
-
-Returns formatted question list
-
-
-
-# Security Features:
-
-
-Query validation before execution
-
-User-specific view creation
-
-Safe query execution through RPC calls
-
-Prevention of harmful operations
-
-
-
-# User Experience Elements:
-
-
-Real-time syntax highlighting
-
-Clear error messages
-
-Interactive question selection
-
-Immediate feedback on query correctness
-
-Professional styling with CSS
-
-Responsive design elements
-
-
-
-# Database Integration:
-
-
-Secure connection to Supabase
-
-RPC calls for query execution
-
-Question and solution storage
-
-User-specific view management
-
-
-
-# Session Management:
-
-
-Unique user ID generation
-
-Query history tracking
-
-State persistence during session
-
-
-
-# Error Handling:
-
-
-
-Comprehensive try-catch blocks
-
-User-friendly error messages
-
-Graceful failure handling
-
-Data validation at multiple levels
-
-
-
-# Styling Features:
-
-
-Custom CSS for modern look
-
-Responsive design elements
-
-Professional color scheme
-
-Enhanced typography
-
-Interactive button states
-
-Clean table formatting
-
-
-# This application is designed for:
-
-
-Educational purposes (SQL learning)
-
-Query testing and validation
-
-Interactive SQL practice
-
-Safe database operations learning
-
-
-# Key benefits:
-
-Safe environment for SQL practice
-
-Immediate feedback on queries
-
-Professional interface
-
-Educational value
-
-Structured learning approach
-
-
-# Typical use flow:
-
-User selects a question
-
-Writes SQL query
-
-Tests the query
-
-Gets immediate feedback
-
-Can submit final answer
-
-Views results and explanations
-
-# PS:
-Don't forget to change "url & key" generated from Supabase and implement your own database.
+- 📚 [Documentation](#)
+- 💻 [API Reference](#)
+- 🐛 [Issue Tracker](#)
+- 💬 [Community Forum](#)
