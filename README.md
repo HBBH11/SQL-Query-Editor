@@ -114,9 +114,3 @@ Remember to update the Supabase credentials (`url` & `key`) and implement your o
 - 📦 Minimal memory footprint
 - 🚀 Fast page load times
 
-## 🔗 Quick Links
-
-- 📚 [Documentation](#)
-- 💻 [API Reference](#)
-- 🐛 [Issue Tracker](#)
-- 💬 [Community Forum](#)
